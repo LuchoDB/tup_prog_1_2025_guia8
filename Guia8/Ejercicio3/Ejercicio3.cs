@@ -68,6 +68,8 @@ namespace Ejercicio3
         }
         #endregion //Esta region permite registrar el nombre y número de libreta de cada alumno ingresado, hasta un máximo de 3 alumnos.
 
+        #region Menu
+
         static int MostrarPantallaSolicitarOpcionMenu()
         {
             Console.Clear();
@@ -77,7 +79,9 @@ namespace Ejercicio3
             int opcion = Convert.ToInt32(Console.ReadLine());
             return opcion;
         }
+        #endregion
 
+        #region Solicitar Alumnos
         static void MostrarPantallaSolicitarAlumnos()
         {
             Console.Clear();
@@ -92,7 +96,9 @@ namespace Ejercicio3
             Console.WriteLine("Presione una tecla para continuar");
             Console.ReadKey();
         }
-        
+        #endregion
+
+        #region Mostrar Lista Ordenada
         static void MostrarPantallaListaOrdenada()
         {
             Console.Clear();
@@ -103,13 +109,14 @@ namespace Ejercicio3
             else
             {
                 Console.WriteLine("Lista de alumnos ordenada por número de libreta:");
-                if (orden >= 1) Console.WriteLine($"{libreta1} - {nombre1}");
-                if (orden >= 2) Console.WriteLine($"{libreta2} - {nombre2}");
-                if (orden >= 3) Console.WriteLine($"{libreta3} - {nombre3}");
+                if (orden >= 0) Console.WriteLine($"{libreta1} - {nombre1}");
+                if (orden >= 1) Console.WriteLine($"{libreta2} - {nombre2}");
+                if (orden >= 2) Console.WriteLine($"{libreta3} - {nombre3}");
             }
             Console.WriteLine("Presione una tecla para continuar");
             Console.ReadKey();
         }
+        #endregion //Esta region permite mostrar la lista de alumnos ordenada por número de libreta, mostrando hasta 3 alumnos.
         static void Main(string[] args)
         {
             int opcion = MostrarPantallaSolicitarOpcionMenu();
