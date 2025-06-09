@@ -55,6 +55,7 @@ namespace Ejercicio6
             Console.Clear();
             Console.WriteLine("1- Registrar Opinion");
             Console.WriteLine("2- Procesar y mostrar resultados de encuesta");
+            Console.WriteLine("(otro)- Salir");
             int opcion = Convert.ToInt32(Console.ReadLine());
             return opcion;
         }
