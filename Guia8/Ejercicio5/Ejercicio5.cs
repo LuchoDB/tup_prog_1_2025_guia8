@@ -8,6 +8,7 @@ namespace Ejercicio5
 {
     internal class Ejercicio5
     {
+        #region Determinar Dias
         static int DeterminarLosDiasDelMes(int mes, int año)
 
         {
@@ -56,7 +57,9 @@ namespace Ejercicio5
             return dias;
 
         }
+        #endregion
 
+        #region Determinar si es bisiesto
         static bool DeterminarSiEsBisiesto (int años)
         {
             bool Bisiesto = false;
@@ -76,6 +79,9 @@ namespace Ejercicio5
             }
             return Bisiesto;
         }
+        #endregion
+
+        #region Menu
         static int MostrarOpcionesMenu()
         {
             Console.Clear();
@@ -85,7 +91,9 @@ namespace Ejercicio5
             int opcion = Convert.ToInt32(Console.ReadLine());
             return opcion;
         }
+        #endregion
 
+        #region Pantalla de solicitud
         static void MostrarPantallaSolicitarMesYAño()
         {
             Console.Clear();
@@ -98,7 +106,9 @@ namespace Ejercicio5
             Console.WriteLine("Presione una tecla para continuar.");
             Console.ReadKey();
         }
+        #endregion
 
+        #region Verificacion Bisiesto
         static void MostrarPantallaVerificarBisiesto()
         {
             Console.Clear();
@@ -115,6 +125,7 @@ namespace Ejercicio5
             Console.WriteLine("Presione una tecla para continuar.");
             Console.ReadKey();
         }
+        #endregion
         static void Main(string[] args)
         {
             int opcion = MostrarOpcionesMenu();

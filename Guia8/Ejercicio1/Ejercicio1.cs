@@ -9,10 +9,10 @@ namespace Ejercicio1
     internal class Ejercicio1
     {
 #region resolución del problema
-        static int acumulador;
-        static int contador;
-        static int maximo;
-        static int minimo;
+        static int acumulador = 0;
+        static int contador = 0;
+        static int maximo = -1;
+        static int minimo = 999999;
 
         #region registrar valor
         static void RegistrarValor(int num)

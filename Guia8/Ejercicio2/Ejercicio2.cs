@@ -112,10 +112,10 @@ namespace Ejercicio2
             Console.Clear();
             Console.WriteLine("Informe de reparto de dinero:");
             CalcularMontosYPorcentajes();
-            Console.WriteLine($"Niña 1: Ana Paula. Edad ({edadAP}), Porcentaje asignado ({porcentajeAP}). Monto que le corresponde {montoAP}");
-            Console.WriteLine($"Niña 2: Lucía. Edad ({edadL}), Porcentaje asignado ({porcentajeL}). Monto que le corresponde {montoL}");
-            Console.WriteLine($"Niña 3: Milena. Edad ({edadM}), Porcentaje asignado ({porcentajeM}). Monto que le corresponde {montoM}");
-            Console.WriteLine($"Niña 4: Jazmin. Edad ({edadJ}), Porcentaje asignado ({porcentajeJ}). Monto que le corresponde {montoJ}");
+            Console.WriteLine($"Niña 1: Ana Paula. Edad ({edadAP}), Porcentaje asignado ({porcentajeAP:F2}). Monto que le corresponde {montoAP:F2}");
+            Console.WriteLine($"Niña 2: Lucía. Edad ({edadL}), Porcentaje asignado ({porcentajeL:F2}). Monto que le corresponde {montoL:F2}");
+            Console.WriteLine($"Niña 3: Milena. Edad ({edadM}), Porcentaje asignado ({porcentajeM:F2}). Monto que le corresponde {montoM:F2}");
+            Console.WriteLine($"Niña 4: Jazmin. Edad ({edadJ}), Porcentaje asignado ({porcentajeJ:F2}). Monto que le corresponde {montoJ:F2}");
             Console.WriteLine("Presione una tecla para salir");
             Console.ReadKey();
 
